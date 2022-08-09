@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="menu">                        
+                  <span class="material-symbols-outlined" onclick="menuBarOn()">menu                
+                 </span>    
+                </div>
+            </nav>
+        </header>
+
+        <div class="main-info">
+        <span class="greeting">
+            <h1>HEY!</h1>
+            <h5>Let's get your order</h5>
+        </span>
+        
+        <div class="items">
+
+             <a href="burger.html">
+            <div class="burger">
+                <img src="https://img.freepik.com/premium-vector/delicious-burger-icon-food-beverages_22052-1.jpg" alt="burger" width="40px">
+                <h2>Burger</h2>
+            </div>
+            </a>
+
+            <a href="pizza.html">
+            <div class="pizza">
+                <img src="data:image/png;base64,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" alt="pizza" width="40px">
+                <h2>Pizzza</h2>
+            </div>
+            </a>
+    
+            <a href="cake.html">
+            <div class="cake">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAAB+CAMAAADV/VW6AAAAwFBMVEX////x8vL0eXMAtJTtXVHf4ODk5uUArovO7efx+/v0bGXy29rzko73eHLShnric27tV0rvoJsHqIzw4uHXTkjrpKH3qKXhbWjiVkzr7Ozgysnii4cAooT0cmziZ2G+gHPtUUP0gXzaWk/zioX89fX4zsvjRzv1r6rzmZLtwb/qf3buSzzj8fDqysfm1tTyvLrtZFniPC7ggn7gvbzhr6zbSz7en5rMwru8dWqGy7tUuaRPwqmr3NE6uKCY08Z1xrX+2ETXAAAD/0lEQVRoge2abXuaMBSGCSJbwKwwZoW6dMnQoUXFdeveu/7/f7WAGgJEpVsTtms8X+C5PMlNThJIEMPo1avXP6aZ6866g/tWmpJF0A09Sz2LyUuTDuCzmFh7Eaq/ByinswSYuums7WEY5uz8QKhe+ji1XjExfpgfLeLrpM9Tq4q30rk++mxr7bghP1hbfcPvshh24atQOOhL/8yzJPJ0NT8jYZMekkwTHu+7ezf8dnB2gvXQZ+85tXLyXk/25+/k+Hd65l7iyZPv6Xn0+NKBz4a+nqm3OIZf/A/4y/JR6zFxQy614Jc32906hxA6nVJSXI2Xbm+WytHAZlqtNlNiEbxkZ6uVvcTMTDfsjAmopEf2Xqs18W0un6xXh/NIHd0WtDlqVNEju5UUtR+0o6vq/7Z0RenvFt8693+YfRDxMRaBp1Qr9vCgJ4a3uQK7hD89+9wFAA4fKmj5Ob4WOgBHloSa6Ef42ujy/Jd0VaPuFL+ccEPldAlfZ+ObeI09L+PbWnPfwOvNfR2vO/c9vks86PE9/r/E/1XzvuN7ftdPvHr2611wxj8yvLnaqS22aFAJd0cVC5c+rHh/WfFg5FZsQM/hq+lfOLEYPaOOyIMucjLRZw5yRe87dCaWj53FGbphbPjg28TYRJRXCF2MTBxH3GfYNJ0E7D0EiWOamF8PjPLiWChO8+IBvz5XRjf82w/5O5rh1aeJyYTwwo0ghJG7wIVHiQuYD9Zx4THNAuZBkNGdj9cB+xm4CUKFL4ujsjhgxeXv/8aTycXt9Pb2YnJhFsKYxqOYFqULj2LRI2zGo1Fslj4PjxE2RU8x5sX3/hj+4iDzIISQKQg93psN/wi8CvX4Hl+Tf83lqNRW/qfL5orLVSr51xbCKzWgVlK8vkd+j+/xR/A2bKhWwW8ECBFn8B/Hfk1ZINYP142A8boSEGT1AD9rib8K77y6CBHWkjBOGwFeGgsBS0KaVXhuG7x9/fat7B/acumbEMnvFkl4QCD/uGPbBn91J8fz5EEsrx3z5mfyP5lT9zze/nAEn/CVq7RuJh6QHMGvW7R+I8eTedn18taXnT+X9o6VBi3wtn8nwZObcmS5RML3SLmxgTcyfsp3KidH/vDTZFsv6vjCLg2uaSNgS8WZF/lOg+6M+c+n8fYmqCuq3VYaAdUtIdvpnKriNL7rm26P7/Fa8cK3EZKn9VNKis+mXCOlkn9XKGyykEr9nXu8Ht/jO8In1yVe6cSrfVIKnxf6/OXNQS+U6vOOt7v5wa/3Lw8aaNXX/AK+ve6IPnj23TB+dEZn/B9GmXn9+MG98bJL/KDb1g+Mn132/U/DuO9u5N/n8/7hNdczrXqA4l1Pt+RLvl69einXL5xKzyoG56FDAAAAAElFTkSuQmCC" alt="cake" width="40px">
+                <h2>Cake</h2>
+            </div>
+            </a>
+            
+            
+
+        </div>
+
+        </div>
+
+        <div class="popular-info">
+            <h3>popular</h3>
+            <h5>view all</h5>
+        </div>
+
+        <div class="popular">
+        <a href="burger.html">    
+            <span class="item-1 item-gap">
+            <div class="pop">
+            <img src="bur.png">
+            </div>
+            <span class="info-text">
+            <h5 >Bereket chicken burger</h5>
+            <h5 >$20.94</h5>
+            <p>big mac</p>
+            </span>
+            </span> 
+        </a>    
+
+
+        <!--Second item-->
+
+        <a href="pizza.html">
+            <span class="item-2 item-gap">
+            <div class="pop">
+            <img src="pizza.png">
+            </div>
+            <span class="info-text">
+            <h5 >Bereket veggi Pizza</h5>
+            <h5 >$20.94</h5>
+            <p>big mac</p>
+            </span>
+            </span>
+        </a> 
+            
+            
+
+            <!--Third item-->
+        <a href="chickensalad.html">
+            <span class="item-3 item-gap">
+            <div class="pop">
+            <img src="1.png">               
+            </div>
+            <span class="info-text">
+            <h5 >Bereket chicken salad</h5>
+            <h5 >$20.94</h5>
+            <p>big mac</p>  
+            </span>
+            </span> 
+        </a>
+    
+            <!--fourth item-->
+        <a href="chicken-nugget.html">
+            <span class="item-4 item-gap">
+            <div class="pop">
+            <img src="2.png">
+            </div>
+            <span class="info-text">
+            <h5 >Bereket chicken nugget</h5>
+            <h5 >$20.94</h5>
+            <p>big mac</p>
+            </span>
+            </span> 
+        </a>
+            
+
+
+            <!--fifth item-->
+        <a href="coca-cola.html">
+            <span class="item-5 item-gap">
+                <div class="cola-back">
+                <img class="cola" src="3.png" width="200px">
+                </div>
+                <span class="info-text">
+                <h5 >Bereket special coka</h5>
+                <h5 >$20.94</h5>
+                <p>big mac</p>
+                </span>
+            </span> 
+        </a>  
+            
+
+
+
+        </div>
+    </div> 
+</div>     
+</body>
+
+
+<footer>
+
+    
+
+    <div class="nav-for-mobile"> 
+
+        <span id="menu-off"  class="material-symbols-outlined" onclick="menuBarOff()">menu</span>
+   
+        <div class="home-icon">
+            <p>Home</p>
+        </div>
+
+        <div class="fav-icon">
+            <p>Favorites</p>
+        </div>
+
+        <div class="account-icon">
+            <p>Account</p>
+        </div>
+
+        <div class="more-icon">
+            <p>More</p>
+        </div>
+
+    <!--
+<div class="nav-for-mobile">
+    
+        <div>
+            <span id="menu-off"  class="material-symbols-outlined" onclick="menuBarOff()">menu
+        </div>
+
+        <div class="home-icon">
+            <p>Home</p>
+            <span class="material-symbols-outlined">house</span>
+        </div>
+
+        <div class="fav-icon">
+            <p>Favorites</p>
+            <span class="material-symbols-outlined">favorite</span>
+        </div>
+
+        <div class="account-icon">
+            <p>Account</p>
+            <span class="material-symbols-outlined">person</span>
+        </div>
+
+        <div class="more-icon">
+            <p>More</p>
+            <span class="material-symbols-outlined">more_horiz</span>
+
+        </div>
+    -->
+
+</footer>
+
+
+<script src="index.js"></script>
+</html>

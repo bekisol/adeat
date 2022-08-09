@@ -1,0 +1,43 @@
+i will create twocontainers like
+
+<div class="container">
+    <h1>Hello whatsup</h1>
+    <img >
+</div>
+
+
+<div class="burger">
+    <h1>PRICE</h1>
+    <button>SIZE</button>
+</div>
+
+<div class="burger">
+    <h1>PRICE</h1>
+    <button>SIZE</button>
+</div>
+
+<div class="burger">
+    <h1>PRICE</h1>
+    <button>SIZE</button>
+</div>
+
+this 3 buttons wil be 
+
+<style>
+    .burger{
+        display: none;
+    }
+</style>
+
+but when we prus the link that will lead us to the page where you order a burger its display will be shown like this
+
+
+<script>
+    const burger = documen.querrySelector("burger")
+    const container = documen.querrySelector("container")
+
+
+    burger.addEventListner("click", (order) => {
+        container.textcontant = burger
+    })
+</script>
